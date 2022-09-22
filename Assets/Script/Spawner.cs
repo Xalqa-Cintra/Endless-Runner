@@ -27,5 +27,15 @@ public class Spawner : MonoBehaviour
     }
 
     if (TimeSinceLastSpawn > timeToNextSpawn)
+        {
+        private void OnJointBreak(float breakForce)
+    {
+        int selection = Random.Range(0, objectsToSpawn.Length);
+
+        Instantiate(objectsToSpawn[selection], transform.position, Quaternion.identity);
+    }
+
+
+}
 }
 
