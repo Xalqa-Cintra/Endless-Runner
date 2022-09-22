@@ -11,14 +11,14 @@ public class Player : MonoBehaviour
 
     float maxSpeed = 5.0f;
     bool isOnGround = false;
-    
+  
     
 
     // Start is called before the first frame update
     void Start()
     {
         playerObject = GetComponent<Rigidbody2D>();
-        float jumpForce = Input.GetAxis("Vertical");
+        
     }
 
     // Update is called once per frame
