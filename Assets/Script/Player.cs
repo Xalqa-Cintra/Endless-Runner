@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float movementValueX = Input.GetAxis("Horizontal");
+        float movementValueX = 1.0f;
        
 
         playerObject.velocity = new Vector2(movementValueX * maxSpeed, playerObject.velocity.y);
@@ -35,7 +35,13 @@ public class Player : MonoBehaviour
         {
             playerObject.AddForce(new Vector2(0.0f,500f));
         }
-        
 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            maxSpeed = 10.0f;
+        } else
+        {
+            maxSpeed = 5.0f;
+        }
     }
 }
