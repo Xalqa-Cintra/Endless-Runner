@@ -11,13 +11,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large platform
       objectReference: {fileID: 0}
+    - target: {fileID: 2090829079754331652, guid: ef43a985296c19443bb183e763fea082, type: 3}
+      propertyPath: m_TagString
+      value: CleanUp
+      objectReference: {fileID: 0}
     - target: {fileID: 2090829079754331657, guid: ef43a985296c19443bb183e763fea082, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2090829079754331657, guid: ef43a985296c19443bb183e763fea082, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090829079754331657, guid: ef43a985296c19443bb183e763fea082, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2090829079754331657, guid: ef43a985296c19443bb183e763fea082, type: 3}
       propertyPath: m_LocalPosition.x

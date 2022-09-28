@@ -13,7 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832247772662434791, guid: 4399f4046d0e7c64aa3c45131b6ada4b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832247772662434791, guid: 4399f4046d0e7c64aa3c45131b6ada4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3832247772662434791, guid: 4399f4046d0e7c64aa3c45131b6ada4b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58,6 +62,10 @@ PrefabInstance:
     - target: {fileID: 3832247772662434794, guid: 4399f4046d0e7c64aa3c45131b6ada4b, type: 3}
       propertyPath: m_Name
       value: Medium platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832247772662434794, guid: 4399f4046d0e7c64aa3c45131b6ada4b, type: 3}
+      propertyPath: m_TagString
+      value: CleanUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4399f4046d0e7c64aa3c45131b6ada4b, type: 3}
