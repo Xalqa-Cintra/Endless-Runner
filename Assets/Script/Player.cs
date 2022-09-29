@@ -34,14 +34,25 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true)
         {
             playerObject.AddForce(new Vector2(0.0f,500f));
+        } else if (Input.GetKeyDown(KeyCode.W) && isOnGround == true)
+        {
+            playerObject.AddForce(new Vector2(0.0f, 500f));
+        } else if (Input.GetKeyDown(KeyCode.S) && isOnGround == false)
+        {
+            playerObject.AddForce(new Vector2(0.0f, -500f));
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.D))
         {
             maxSpeed = 10.0f;
-        } else
+        } else if (Input.GetKey(KeyCode.A))
+        {
+            maxSpeed = 2.5f;
+        }
+        else
         {
             maxSpeed = 5.0f;
         }
+        
     }
 }
