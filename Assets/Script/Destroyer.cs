@@ -10,6 +10,11 @@ public class Destroyer : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+        
+        if (collision.gameObject.tag == "PickUp")
+        {
+            Destroy(collision.gameObject);
+        }
 
     }
 }
