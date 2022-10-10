@@ -5,6 +5,8 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - groundChecker: {fileID: 6725337890970949773, guid: 2581ce343813ca341b44db767624bc5c, type: 3}
+  - backgroundMusic: {fileID: 8300000, guid: 0f5b940db75b8f04293a9d9d5ef8ffa3, type: 3}
+  - musicPlayer: {fileID: 5052039770531268236, guid: 3ce715558f3131545bf9e70b4f81becc, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

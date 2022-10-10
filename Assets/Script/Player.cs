@@ -12,13 +12,17 @@ public class Player : MonoBehaviour
     float maxSpeed = 5.0f;
     bool isOnGround = false;
 
+    public AudioClip backgroundMusic;
+    public AudioSource musicPlayer;
+    
+
     Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         playerObject = GetComponent<Rigidbody2D>();
-
+     
         anim = GetComponent<Animator>();
     }
 
