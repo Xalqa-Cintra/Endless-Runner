@@ -23,7 +23,7 @@ public class Parallax : MonoBehaviour
         rend.material.SetTextureOffset("_MainTex", new Vector2(offset, 0f));
     }
 
-GameObject player;
+    GameObject player;
     Renderer rend;
     float playerStartPos;
     public float speed = 0.5f;
