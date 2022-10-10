@@ -11,21 +11,24 @@ public class Player : MonoBehaviour
 
     float maxSpeed = 5.0f;
     bool isOnGround = false;
-  
-    
+
+    Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         playerObject = GetComponent<Rigidbody2D>();
-        
+
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float movementValueX = 1.0f;
-       
+
+        anim.SetFloat("Speed", Mathf.Abs(movementValueX));
+        anim.SetBool("IsOnGround", isOnGround);
 
         playerObject.velocity = new Vector2(movementValueX * maxSpeed, playerObject.velocity.y);
 
@@ -47,13 +50,15 @@ public class Player : MonoBehaviour
             maxSpeed = 10.0f;
         } else if (Input.GetKey(KeyCode.A))
         {
-            maxSpeed = 2.5f;
+            maxSpeed = 2.0f;
         }
         else
         {
             maxSpeed = 5.0f;
         }
         
+     
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
