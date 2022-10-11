@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     public Text scoreText;
+    public Text hiScoreText;
 
     public float scoreCount;
+    public float hiScoreCount;
 
     public float pointsPerSecond;
 
@@ -18,7 +20,7 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      player = GameObject.Find("Player");
+     
 
     }
 
@@ -28,7 +30,11 @@ public class ScoreManager : MonoBehaviour
         scoreCount += pointsPerSecond * Time.deltaTime;
 
         scoreText.text = "Score: " + Mathf.Round(scoreCount);
+        hiScoreText.text = "High Score: " + hiScoreCount;
     }
 
-    GameObject player;
+    public void AddScore(int pointsToAdd)
+    {
+        scoreCount += pointsToAdd;
+    }
 }

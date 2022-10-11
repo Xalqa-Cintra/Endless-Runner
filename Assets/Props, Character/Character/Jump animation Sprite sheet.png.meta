@@ -33,7 +33,7 @@ TextureImporter:
       213: -8192751735234006669
     second: Jump animation Sprite sheet_9
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -54,7 +54,6 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -93,7 +92,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -366,17 +364,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Jump animation Sprite sheet_3: 5147661802142044753
-      Jump animation Sprite sheet_4: -1575746934771099897
-      Jump animation Sprite sheet_2: 134674151258774555
-      Jump animation Sprite sheet_7: -2707453530014440953
-      Jump animation Sprite sheet_1: -7417997053384224403
-      Jump animation Sprite sheet_6: 8586540237599975638
-      Jump animation Sprite sheet_5: 1371124968975536972
-      Jump animation Sprite sheet_8: 3202800882696024187
-      Jump animation Sprite sheet_0: 6943265652485197767
-      Jump animation Sprite sheet_9: -8192751735234006669
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
