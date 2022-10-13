@@ -13,8 +13,14 @@ public class Player : MonoBehaviour
     bool isOnGround = false;
 
     public AudioClip backgroundMusic;
+    public AudioClip jump;
+    public AudioSource sfxPlayer;
     public AudioSource musicPlayer;
-    
+
+    musicPlayer.clip = backgroundMusic
+    musicPlayer.loop = true
+    musicPlayer.Play();
+    sfxPlayer.PlayerOneShot(jump);
 
     Animator anim;
 
