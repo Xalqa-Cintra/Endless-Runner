@@ -17,10 +17,7 @@ public class Player : MonoBehaviour
     public AudioSource sfxPlayer;
     public AudioSource musicPlayer;
 
-    musicPlayer.clip = backgroundMusic
-    musicPlayer.loop = true
-    musicPlayer.Play();
-    sfxPlayer.PlayerOneShot(jump);
+    
 
     Animator anim;
 
@@ -28,7 +25,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         playerObject = GetComponent<Rigidbody2D>();
-     
+   
         anim = GetComponent<Animator>();
     }
 
@@ -67,7 +64,9 @@ public class Player : MonoBehaviour
             maxSpeed = 5.0f;
         }
         
-     
+       musicPlayer.clip = backgroundMusic;
+     musicPlayer.loop = true;
+     musicPlayer.Play();
 
     }
 
