@@ -15,13 +15,13 @@ public class ScoreManager : MonoBehaviour
 
     public bool scoreIncreasing;
 
-   public float distance;
+    public float distance;
 
     // Start is called before the first frame update
     void Start()
     {
-     
 
+      
     }
 
     // Update is called once per frame
@@ -29,12 +29,19 @@ public class ScoreManager : MonoBehaviour
     {
         scoreCount += pointsPerSecond * Time.deltaTime;
 
+        if (scoreCount > hiScoreCount)
+        {
+            hiScoreCount = scoreCount;
+        }
+
         scoreText.text = "Score: " + Mathf.Round(scoreCount);
-        hiScoreText.text = "High Score: " + hiScoreCount;
+        hiScoreText.text = "High Score: " + Mathf.Round(hiScoreCount);
     }
 
     public void AddScore(int pointsToAdd)
     {
         scoreCount += pointsToAdd;
     }
+   
+
 }

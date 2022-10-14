@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 128020386}
   - component: {fileID: 128020390}
   m_Layer: 0
-  m_Name: BG 6
+  m_Name: BG 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -324,11 +324,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128020385}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0001999999, y: 0.021800002, z: 0.11508}
+  m_LocalPosition: {x: -0.0001999999, y: 0.0396, z: 0.0571}
   m_LocalScale: {x: 0.26295283, y: 0.19474944, z: 0.26295283}
   m_Children: []
   m_Father: {fileID: 588932824}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &128020390
 MonoBehaviour:
@@ -438,7 +438,7 @@ Transform:
   m_LocalScale: {x: 0.26295283, y: 0.19474944, z: 0.26295283}
   m_Children: []
   m_Father: {fileID: 588932824}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &187855604
 MonoBehaviour:
@@ -498,7 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 4510060312977767086, guid: d358760c127b9634b8d0cbf6d913f362, type: 3}
-  minSpawnTime: 6
+  minSpawnTime: 8
   maxSpawnTime: 9
 --- !u!1 &399853175
 GameObject:
@@ -798,7 +798,7 @@ Transform:
   m_LocalScale: {x: 0.26295283, y: 0.19474944, z: 0.26295283}
   m_Children: []
   m_Father: {fileID: 588932824}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &550437296
 MonoBehaviour:
@@ -915,10 +915,10 @@ Transform:
   - {fileID: 399853176}
   - {fileID: 427148648}
   - {fileID: 1099271545}
+  - {fileID: 128020389}
   - {fileID: 550437295}
   - {fileID: 187855603}
   - {fileID: 1332165142}
-  - {fileID: 128020389}
   - {fileID: 66443022}
   - {fileID: 373330292}
   - {fileID: 1540489233}
@@ -1170,6 +1170,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   backgroundMusic: {fileID: 8300000, guid: 0f5b940db75b8f04293a9d9d5ef8ffa3, type: 3}
+  jump: {fileID: 0}
+  sfxPlayer: {fileID: 0}
   musicPlayer: {fileID: 0}
 --- !u!50 &824431659
 Rigidbody2D:
@@ -1435,7 +1437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 582, y: 307}
+  m_AnchoredPosition: {x: 616.93604, y: 300}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896780889
@@ -1577,8 +1579,8 @@ MonoBehaviour:
   - {fileID: 3832247772662434794, guid: 4399f4046d0e7c64aa3c45131b6ada4b, type: 3}
   - {fileID: 2090829079754331652, guid: ef43a985296c19443bb183e763fea082, type: 3}
   - {fileID: 4766906658895681884, guid: d4d931e94fa664e42a8e1f6b8845d4a6, type: 3}
-  minSpawnTime: 3
-  maxSpawnTime: 6
+  minSpawnTime: 2
+  maxSpawnTime: 4.5
 --- !u!4 &902825835
 Transform:
   m_ObjectHideFlags: 0
@@ -1887,7 +1889,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1166793995}
-  - component: {fileID: 1166793997}
   - component: {fileID: 1166793996}
   m_Layer: 0
   m_Name: ScoreManager
@@ -1928,25 +1929,6 @@ MonoBehaviour:
   hiScoreCount: 0
   pointsPerSecond: 5
   scoreIncreasing: 1
-  distance: 0
---- !u!114 &1166793997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166793994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f458cdb0f34cac24bac681baff6da22f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  hiScoreText: {fileID: 0}
-  scoreCount: 0
-  hiScoreCount: 0
-  pointsPerSecond: 0
-  scoreIncreasing: 0
   distance: 0
 --- !u!1 &1175275734
 GameObject:
@@ -2169,7 +2151,7 @@ Transform:
   m_LocalScale: {x: 0.26295283, y: 0.19474944, z: 0.26295283}
   m_Children: []
   m_Father: {fileID: 588932824}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1332165143
 MonoBehaviour:
