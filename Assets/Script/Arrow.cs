@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Arrow : MonoBehaviour
 {
@@ -30,6 +31,16 @@ public class Arrow : MonoBehaviour
         playerObject.velocity = new Vector2(movementValueX * speed, 0f);
     }
 
+private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(collision.gameObject);
+    
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
 
+
+        }
+    }
 }
